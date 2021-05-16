@@ -1,0 +1,55 @@
+.discover {
+  text-align: center;
+  & p:nth-child(3) {
+    margin-bottom: 1rem;
+  }
+
+  .discover__options {
+    display: flex;
+    border-bottom: 2px solid #616161;
+    width: 800px;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    .discover__option {
+      margin: 1rem 2rem 0;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .discover__option__active {
+      margin-right: 1rem;
+      border-bottom: 0.25rem solid #6161b9;
+      font-weight: bold;
+    }
+  }
+  .discover__text {
+    width: 800px;
+    margin: 0 auto 2rem;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+}
+
+.discover > * {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .discover img {
+    width: 100%;
+  }
+  .discover__options {
+    width: 100%;
+    .discover__option {
+      margin: 0.5rem 0.5rem 0;
+      font-size: 1rem;
+    }
+  }
+  .discover__text {
+    width: 100%;
+    margin: 0 auto 2rem;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+}

@@ -1,0 +1,45 @@
+@import "./config";
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.icon-big {
+  width: 50px;
+  height: 50px;
+}
+
+button {
+  background: $accent-color;
+  color: white;
+  padding: 1rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background: $accent-color2;
+  }
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid $base-color;
+}
+@media (max-width: 500px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .icon-big {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@import "./nav";
+@import "./hero";
+@import "./discover";
+@import "./contact";
